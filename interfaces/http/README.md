@@ -135,7 +135,7 @@ If you've built a component you think others would find valuable, please submit 
 
 The [basic HTTP source](http.js) emits an event that contains the [HTTP payload](https://requestbin.com/blog/working-with-webhooks/#http-payload-body), [method](https://requestbin.com/blog/working-with-webhooks/#http-methods-get-and-post), [headers](https://requestbin.com/blog/working-with-webhooks/#http-header), and more:
 
-```json
+json
 {
   "body": "{\"name\": \"Luke\"}",
   "headers": {
@@ -152,7 +152,7 @@ The [basic HTTP source](http.js) emits an event that contains the [HTTP payload]
   "path": "/",
   "query": {}
 }
-```
+
 
 Sometimes, you might not care about the HTTP metadata, and just want to retrieve the HTTP payload. The [`http-payload-only` source](http-payload-only.js) emits just the payload:
 
